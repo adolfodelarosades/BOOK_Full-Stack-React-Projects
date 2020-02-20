@@ -93,23 +93,23 @@ Reviews
 
 ##### MERN stack
 
-Node
+   Node
 
-Express
+   Express
 
-MongoDB
+   MongoDB
 
-React
+   React
 
-##### Relevance of MERN
+* Relevance of MERN
 
-Consistency across the technology stack
+   * Consistency across the technology stack
 
-Less time to learn, develop, deploy, and extend
+   * Less time to learn, develop, deploy, and extend
 
-Widely adopted in the industry
+   * Widely adopted in the industry
 
-Community support and growth
+   * Community support and growth
 
 ##### Range of MERN applications
 
