@@ -91,15 +91,15 @@ Reviews
 
 #### Unleashing React Applications with MERN
 
-##### MERN stack
+* MERN stack
 
-   Node
+   * Node
 
-   Express
+   * Express
 
-   MongoDB
+   * MongoDB
 
-   React
+   * React
 
 * Relevance of MERN
 
@@ -111,233 +111,233 @@ Reviews
 
    * Community support and growth
 
-##### Range of MERN applications
+* Range of MERN applications
 
-MERN applications developed in this book
+   * MERN applications developed in this book
 
-Social media platform
+      * Social media platform
 
-Online marketplace
+      * Online marketplace
 
-Media streaming application
+      * Media streaming application
 
-VR game for the web
+      * VR game for the web
 
-##### Book structure
+* Book structure
 
-Getting started with MERN
+   * Getting started with MERN
 
-Building MERN from the ground up – a skeleton application
+   * Building MERN from the ground up – a skeleton application
 
-Developing basic web applications with MERN
+   * Developing basic web applications with MERN
 
-Advancing to complex MERN applications
+   * Advancing to complex MERN applications
 
-Going forward with MERN
+   * Going forward with MERN
 
-##### Getting the most out of this book
+* Getting the most out of this book
 
-##### Summary
+* Summary
 
 #### Preparing the Development Environment
 
-##### Selecting development tools
+* Selecting development tools
 
-Workspace options
+   * Workspace options
 
-Local and cloud development
+      * Local and cloud development
 
-IDE or text editors
+   * IDE or text editors
 
-Chrome Developer Tools
+   * Chrome Developer Tools
 
-Git
+   * Git
 
-Installation
+      * Installation
 
-Remote Git hosting services
+      * Remote Git hosting services
 
-##### Setting up MERN stack technologies
+* Setting up MERN stack technologies
 
-MongoDB
+   * MongoDB
 
-Installation
+      * Installation
 
-Running the mongo shell
+      * Running the mongo shell
 
-Node
+   * Node
 
-Installation
+      * Installation
 
-Upgrading npm versions
+         * Upgrading npm versions
 
-Node version management with nvm
+      * Node version management with nvm
 
-npm modules for MERN
+   * npm modules for MERN
 
-Key modules
+      * Key modules
 
-devDependency modules
+      * devDependency modules
 
-##### Checking your development setup
+* Checking your development setup
 
-Initializing package.json and installing npm modules
+   * Initializing package.json and installing npm modules
 
-Configuring Babel, Webpack, and Nodemon
+   * Configuring Babel, Webpack, and Nodemon
 
-Babel
+      * Babel
 
-Webpack
+      * Webpack
 
-Client-side Webpack configuration for development
+         * Client-side Webpack configuration for development
 
-Server-side Webpack configuration
+         * Server-side Webpack configuration
 
-Client-side Webpack configuration for production 
+         * Client-side Webpack configuration for production 
 
-Nodemon
+      * Nodemon
 
-Frontend views with React
+   * Frontend views with React
 
-Server with Express and Node
+   * Server with Express and Node
 
-Express app
+      * Express app
 
-Bundle React app during development
+      * Bundle React app during development
 
-Serving static files from the dist folder
+      * Serving static files from the dist folder
 
-Rendering templates at the root 
+      * Rendering templates at the root 
 
-Connecting the server to MongoDB
+   * Connecting the server to MongoDB
 
-npm run scripts
+   * npm run scripts
 
-Developing and debugging in real time
+   * Developing and debugging in real time
 
-Summary
+* Summary
 
 #### Building a Backend with MongoDB, Express, and Node
 
-##### Skeleton application overview
+* Skeleton application overview
 
-Feature breakdown
+   * Feature breakdown
 
-Focus of this chapter – the backend
+   * Focus of this chapter – the backend
 
-User model
+      * User model
 
-API endpoints for user CRUD
+      * API endpoints for user CRUD
 
-Auth with JSON Web Tokens
+      * Auth with JSON Web Tokens
 
-How JWT works
+         * How JWT works
 
-##### Implementing the skeleton backend
+* Implementing the skeleton backend
 
-Folder and file structure
+   * Folder and file structure
 
-Setting up the project
+   * Setting up the project
 
-Initializing package.json
+      * Initializing package.json
 
-Development dependencies
+      * Development dependencies
 
-Babel
+         * Babel
 
-Webpack
+         * Webpack
 
-Nodemon
+         * Nodemon
 
-Config variables
+      * Config variables
 
-Running scripts
+      * Running scripts
 
-Preparing the server
+   * Preparing the server
 
-Configuring Express
+      * Configuring Express
 
-Starting the server
+      * Starting the server
 
-Setting up Mongoose and connecting to MongoDB
+      * Setting up Mongoose and connecting to MongoDB
 
-Serving an HTML template at a root URL
+      * Serving an HTML template at a root URL
 
-User model
+   * User model
 
-User schema definition
+      * User schema definition
 
-Name
+         * Name
 
-Email
+         * Email
 
-Created and updated timestamps
+         * Created and updated timestamps
 
-Hashed password and salt
+         * Hashed password and salt
 
-Password for auth
+      * Password for auth
 
-As a virtual field
+         * As a virtual field
 
-Encryption and authentication
+         * Encryption and authentication
 
-Password field validation
+         * Password field validation
 
-Mongoose error handling
+      * Mongoose error handling
 
-User CRUD API 
+   * User CRUD API 
 
-User routes
+      * User routes
 
-User controller
+      * User controller
 
-Creating a new user
+       * Creating a new user
 
-Listing all users
+       * Listing all users
 
-Loading a user by ID to read, update, or delete
+       * Loading a user by ID to read, update, or delete
 
-Loading
+          * Loading
 
-Reading
+          * Reading
 
-Updating
+          * Updating
 
-Deleting
+          * Deleting
 
-User auth and protected routes
+      * User auth and protected routes
 
-Auth routes
+         * Auth routes
 
-Auth controller
+         * Auth controller
 
-Sign-in
+         * Sign-in
 
-Sign-out
+         * Sign-out
 
-Protecting routes with express-jwt
+         * Protecting routes with express-jwt
 
-Requiring sign-in
+            * Requiring sign-in
 
-Authorizing signed in users
+            * Authorizing signed in users
 
-Protecting user routes
+            * Protecting user routes
 
-Auth error handling for express-jwt
+            * Auth error handling for express-jwt
 
-Checking the standalone backend
+* Checking the standalone backend
 
-Creating a new user
+   * Creating a new user
 
-Fetching the user list
+   * Fetching the user list
 
-Trying to fetch a single user
+   * Trying to fetch a single user
 
-Signing in
+   * Signing in
 
-Fetching a single user successfully
+   * Fetching a single user successfully
 
-Summary
+* Summary
 
 #### Adding a React Frontend to Complete MERN
 
