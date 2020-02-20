@@ -57,37 +57,37 @@ Contenido suplementario: [https://github.com/PacktPublishing/Full-Stack-React-Pr
 
 #### Copyright and Credits
 
-Full-Stack React Projects
+* Full-Stack React Projects
 
 #### Packt Upsell
 
-Why subscribe?
+* Why subscribe?
 
-PacktPub.com
+* PacktPub.com
 
 #### Contributors
 
-About the author
+* About the author
 
-About the reviewer
+* About the reviewer
 
-Packt is searching for authors like you
+* Packt is searching for authors like you
 
 #### Preface
 
-Who this book is for
+* Who this book is for
 
-What this book covers
+* What this book covers
 
-To get the most out of this book
+* To get the most out of this book
 
-Download the example code files
+   * Download the example code files
 
-Conventions used
+   * Conventions used
 
-Get in touch
+* Get in touch
 
-Reviews
+   * Reviews
 
 #### Unleashing React Applications with MERN
 
