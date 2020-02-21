@@ -271,7 +271,7 @@ Generaremos estos archivos de proyecto en la siguiente estructura de carpetas pa
   | -- webpack.config.server.js
 </pre>
 
-El código discutido en esta sección está disponible en GitHub en el repositorio en: github.com/shamahoque/mern-simplesetup. Puede clonar este código y ejecutarlo a medida que avanza por las explicaciones del código en el resto de este capítulo.
+El código discutido en esta sección está disponible en GitHub en el repositorio en: https://github.com/shamahoque/mern-simplesetup. Puede clonar este código y ejecutarlo a medida que avanza por las explicaciones del código en el resto de este capítulo.
 
 ### Inicializando package.json e instalando módulos npm
 
