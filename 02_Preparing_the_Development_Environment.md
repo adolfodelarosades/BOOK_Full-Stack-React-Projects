@@ -248,8 +248,43 @@ Para mantener la coherencia durante el desarrollo de las aplicaciones MERN, util
 
 *Aunque `react-hot-loader` está destinado a ayudar al flujo de desarrollo, es seguro instalar este módulo como una dependencia regular en lugar de una dependencia de desarrollo. Asegura automáticamente que la recarga en caliente esté desactivada en la producción y que la huella sea mínima.*
 
+## Verificando su configuración de desarrollo
 
+### Inicializando package.json e instalando módulos npm
 
+### Configuración de Babel, Webpack y Nodemon
+
+#### Babel
+
+#### Webpack
+
+##### Configuración del paquete web del lado del cliente para el desarrollo
+
+##### Configuración del paquete web del lado del servidor
+
+##### Configuración del paquete web del lado del cliente para producción
+
+#### Nodemon
+
+### Vistas frontend con React
+
+### Servidor con Express y Node
+
+#### Aplicación Express
+
+#### Aplicación Bundle React durante el desarrollo
+
+#### Sirviendo archivos estáticos desde la carpeta dist
+
+#### Representación de plantillas en la raíz
+
+### Conexión del servidor a MongoDB
+
+### npm ejecutar scripts
+
+### Desarrollo y depuración en tiempo real.
+
+## Resumen
 
 
 
