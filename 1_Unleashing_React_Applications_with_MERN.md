@@ -148,13 +148,27 @@ Puede parecer razonable elegir características específicas en las tecnologías
 
 ### Aplicaciones MERN desarrolladas en este libro
 
-#### Plataforma de redes sociales
+Para demostrar la amplitud de posibilidades con MERN y cómo puede comenzar fácilmente a construir una aplicación web con diversas características, este libro mostrará aplicaciones web de uso diario junto con experiencias web complejas y raras:
 
-#### Mercado en línea
+<img src="1-aplicaciones.jpg">
 
-#### Aplicación de transmisión de medios
+La captura de pantalla anterior da una idea de las cuatro aplicaciones diferentes de MERN desarrolladas en el resto de este libro.
 
-#### Juego de realidad virtual para la web
+#### Social media platform (Plataforma de redes sociales)
+
+Para la primera aplicación MERN, crearemos una aplicación básica de redes sociales inspirada en Twitter y Facebook. Esta plataforma de redes sociales implementará características simples como compartir publicaciones, dar me gusta y comentar, seguir a amigos y una fuente de noticias agregada.
+
+#### Online marketplace (Mercado en línea)
+
+Las aplicaciones web de comercio electrónico de todo tipo abundan en Internet, y no pasarán de moda pronto. Con MERN, crearemos una aplicación de mercado en línea que cubra aspectos centrales, como soporte para cuentas de vendedor, listados de productos, un carrito de compras para clientes y procesamiento de pagos.
+
+#### Media streaming application (Aplicación de transmisión de medios)
+
+Para probar algunas capacidades avanzadas de MERN, una aplicación más inmersiva, como una aplicación de transmisión de medios, es la siguiente opción. Inspirada en las funciones de Netflix y YouTube, esta aplicación implementará capacidades de carga y visualización de contenido con una función de carga de contenido multimedia para proveedores de contenido y transmisión de contenido en tiempo real para los espectadores.
+
+#### VR game for the web (Juego de realidad virtual para la web)
+
+El lanzamiento de React 360 hace posible aplicar capacidades de realidad virtual web a las interfaces de usuario de React. Exploraremos cómo crear experiencias web raras con React 360 en MERN al crear una aplicación básica de juegos de realidad virtual para la web. Los usuarios podrán crear y jugar juegos de realidad virtual, donde cada juego tendrá objetos animados de realidad virtual que el jugador puede recoger para completar el juego.
 
 
 
