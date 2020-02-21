@@ -200,6 +200,31 @@ Finalmente, el Capítulo 12, *Siguiendo las mejores prácticas y desarrollando M
 Puede optar por utilizar el libro fuera del orden prescrito en función de su nivel de experiencia y preferencia. Un desarrollador que es muy nuevo en MERN puede seguir el camino establecido en el libro. Para un desarrollador JS más experimentado, los capítulos en el Building MERN desde cero: una sección de aplicación esqueleto sería un buen lugar para comenzar a configurar la aplicación base, luego elegir cualquiera de las cuatro aplicaciones para construir y extender.
 
 
+## Aprovechar al máximo este libro
+
+El contenido de este libro está orientado a la práctica y cubre los pasos de implementación, el código y los conceptos relevantes para desarrollar cada aplicación MERN. Se recomienda que, en lugar de intentar leer solo los capítulos, ejecute el código relevante en paralelo y explore las características de la aplicación mientras sigue las explicaciones del libro.
+
+Los capítulos que analizan las implementaciones de código apuntarán a los repositorios de GitHub que contienen el código completo con instrucciones sobre cómo ejecutar el código. Puede extraer el código, instalarlo y ejecutarlo antes de leer el capítulo:
+
+<img src="images/1-git.jpg">
 
 
+Puede considerar los siguientes pasos recomendados descritos para seguir las implementaciones en este libro:
 
+* Antes de sumergirse en los detalles de implementación discutidos en el capítulo, extraiga el código del repositorio de GitHub relevante
+
+* Siga las instrucciones con el código para instalar y ejecutar la aplicación.
+
+* Explore las características de la aplicación en ejecución, mientras lee las descripciones de las características en el capítulo correspondiente
+
+* Con el código ejecutándose en modo de desarrollo y también abierto en el editor, consulte los pasos y explicaciones en el libro para obtener una comprensión más profunda de las implementaciones
+
+Este libro tiene como objetivo proporcionar una incorporación rápida con código de trabajo para cada aplicación. Puede experimentar, mejorar y ampliar este código según lo desee. Para una experiencia de aprendizaje activa, se le recomienda refactorizar y modificar el código mientras sigue el libro. En algunos ejemplos, el libro elige código detallado sobre código sucinto y más limpio porque es más fácil razonar sobre los recién llegados. En algunas otras implementaciones, el libro se adhiere a las convenciones más utilizadas y tradicionales sobre las convenciones modernas y futuras de JavaScript. Esto se hace para minimizar la disparidad cuando hace referencia a recursos y documentación en línea mientras investiga las tecnologías y conceptos discutidos por su cuenta. Estas instancias donde el código en el libro se puede actualizar, sirven como buenas oportunidades para explorar y desarrollar habilidades más allá de lo que se cubre en el libro.
+
+## Resumen
+
+En este capítulo, descubrimos el contexto para desarrollar aplicaciones web en la stack MERN y cómo este libro lo ayudará a desarrollar con esta pila.
+
+Los proyectos de stack MERN integran MongoDB, Express, React y Node para crear aplicaciones web. Cada una de las tecnologías en esta pila ha logrado avances importantes en el mundo del desarrollo web. Estos son ampliamente adoptados y continúan mejorando con el apoyo de las comunidades en crecimiento. Es posible desarrollar aplicaciones MERN con diversos requisitos, desde aplicaciones de uso diario hasta experiencias web más complejas. El enfoque orientado a la práctica en este libro se puede usar para desarrollar las habilidades MERN de básico a avanzado, o para sumergirse directamente en la construcción de aplicaciones más complejas.
+
+En el próximo capítulo, comenzaremos a prepararnos para el desarrollo de aplicaciones MERN configurando el entorno de desarrollo.
