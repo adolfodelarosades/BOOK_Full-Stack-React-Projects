@@ -250,6 +250,47 @@ Para mantener la coherencia durante el desarrollo de las aplicaciones MERN, util
 
 ## Verificando su configuración de desarrollo
 
+En esta sección, revisaremos el flujo de trabajo de desarrollo y escribiremos el código paso a paso para garantizar que el entorno esté configurado correctamente para comenzar a desarrollar y ejecutar aplicaciones MERN.
+
+Generaremos estos archivos de proyecto en la siguiente estructura de carpetas para ejecutar un proyecto de instalación simple:
+
+<pre>
+| mern-simplesetup/
+  | -- client/
+    | --- HelloWorld.js
+    | --- main.js
+  | -- server/
+    | --- devBundle.js
+    | --- server.js
+  | -- .babelrc
+  | -- nodemon.json
+  | -- package.json
+  | -- template.js
+  | -- webpack.config.client.js
+  | -- webpack.config.client.production.js
+  | -- webpack.config.server.js
+</pre>
+
+```sh
+| mern-simplesetup/
+  | -- client/
+    | --- HelloWorld.js
+    | --- main.js
+  | -- server/
+    | --- devBundle.js
+    | --- server.js
+  | -- .babelrc
+  | -- nodemon.json
+  | -- package.json
+  | -- template.js
+  | -- webpack.config.client.js
+  | -- webpack.config.client.production.js
+  | -- webpack.config.server.js
+</pre>
+```
+
+El código discutido en esta sección está disponible en GitHub en el repositorio en: github.com/shamahoque/mern-simplesetup. Puede clonar este código y ejecutarlo a medida que avanza por las explicaciones del código en el resto de este capítulo.
+
 ### Inicializando package.json e instalando módulos npm
 
 ### Configuración de Babel, Webpack y Nodemon
