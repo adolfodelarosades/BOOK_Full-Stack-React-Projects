@@ -221,6 +221,35 @@ Para integrar las tecnologías de stack MERN y ejecutar sus aplicaciones, necesi
 
 #### Módulos devDependency
 
+Para mantener la coherencia durante el desarrollo de las aplicaciones MERN, utilizaremos JavaScript ES6 en todo el stack. Como consecuencia, y también para ayudar al proceso de desarrollo, utilizaremos los siguientes módulos npm adicionales para compilar y agrupar el código y para volver a cargar automáticamente el servidor y la aplicación del navegador a medida que el código se actualiza durante el desarrollo:
+
+* Se necesitan módulos de **Babel** para convertir ES6 y JSX a JavaScript adecuado para todos los navegadores. Los módulos necesarios para que Babel funcione son:
+   * `babel-core`
+   
+   * `babel-loader` para transpilar archivos JavaScript con Webpack
+   
+   * `babel-preset-env`, `babel-preset-react` y `babel-preset-stage-2` para proporcionar soporte para React, las últimas funciones de JS y algunas características de stage-x como declarar campos de clase que actualmente no están cubiertos por `babel-preset-env`
+   
+* Los módulos Webpack ayudarán a agrupar el JavaScript compilado, tanto para el código del lado del cliente como del lado del servidor. Los módulos necesarios para que Webpack funcione son:
+
+   * `webpack`
+   
+   * `webpack-cli` para ejecutar comandos de Webpack
+   
+   * `webpack-node-externals` para ignorar los archivos externos del módulo Node cuando se agrupa en Webpack
+   
+   * `webpack-dev-middleware` para servir los archivos emitidos por Webpack a través de un servidor conectado durante el desarrollo del código
+   
+   * `webpack-hot-middleware` para agregar la recarga de módulos calientes en un servidor existente conectando un cliente de navegador a un servidor Webpack y recibiendo actualizaciones a medida que el código cambia durante el desarrollo
+   
+* `nodemon` para observar los cambios del lado del servidor durante el desarrollo, por lo que el servidor se puede volver a cargar para que los cambios surtan efecto.
+
+* `react-hot-loader` para un desarrollo más rápido en el lado del cliente. Cada vez que un archivo cambia en la interfaz React, `react-hot-loader` permite que la aplicación del navegador se actualice sin volver a agrupar todo el código de la interfaz.
+
+*Aunque `react-hot-loader` está destinado a ayudar al flujo de desarrollo, es seguro instalar este módulo como una dependencia regular en lugar de una dependencia de desarrollo. Asegura automáticamente que la recarga en caliente esté desactivada en la producción y que la huella sea mínima.*
+
+
+
 
 
 
