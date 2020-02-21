@@ -80,15 +80,26 @@ Obtenga más información sobre Node en https://nodejs.org/en/ y explore los mó
 
 ### Express
 
-Express es un marco básico para crear aplicaciones web y API con un servidor Node. Proporciona una capa simple de características fundamentales de la aplicación web que complementa Node.
+Express es un marco básico para crear aplicaciones web y APIs con un servidor Node. Proporciona una capa simple de características fundamentales de la aplicación web que complementa Node.
 
-En cualquier aplicación web desarrollada con Node, Express se puede usar como un marco web de enrutamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es esencialmente una serie de llamadas a funciones de middleware.
+En cualquier aplicación web desarrollada con Node, Express se puede usar como un framework web de enrutamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es esencialmente una serie de llamadas a funciones middleware.
 
-Las funciones de middleware son funciones que tienen acceso a los objetos de solicitud y respuesta HTTP, y también la siguiente función de middleware en el ciclo de solicitud-respuesta de la aplicación web.
+*Las **Middleware** son funciones que tienen acceso a los objetos HTTP request y response, y también a la siguiente función middleware en el ciclo de solicitud-respuesta de la aplicación web.* 
+
 Es posible insertar casi cualquier middleware compatible de su elección en la cadena de manejo de solicitudes, en casi cualquier orden, haciendo que Express sea muy flexible para trabajar.
 
-Descubra lo que es posible con Express.js en expressjs.com.
+*Descubra lo que es posible con Express.js en http://expressjs.com*.
 
 ### MongoDB
 
 ### React
+
+
+
+
+
+
+
+
+
+
