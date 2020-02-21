@@ -76,7 +76,7 @@ Node tiene una arquitectura controlada por eventos capaz de I/O asíncrona sin b
 
 El sistema de administración de paquetes predeterminado de Node, el administrador de paquetes de Node o npm, viene incluido con la instalación de Node. Npm da acceso a cientos de miles de paquetes Node reutilizables creados por desarrolladores de todo el mundo y se jacta de que actualmente es el ecosistema más grande de bibliotecas de código abierto en el mundo.
 
-Obtenga más información sobre Node en https://nodejs.org/en/ y explore los módulos npm disponibles en https://www.npmjs.com/.
+*Obtenga más información sobre Node en https://nodejs.org/en/ y explore los módulos npm disponibles en https://www.npmjs.com/.*
 
 ### Express
 
@@ -92,14 +92,69 @@ Es posible insertar casi cualquier middleware compatible de su elección en la c
 
 ### MongoDB
 
+MongoDB es la mejor opción cuando se decide por una base de datos NoSQL para cualquier aplicación. Es una base de datos orientada a documentos que almacena datos en documentos flexibles similares a JSON. Esto significa que los campos pueden variar de un documento a otro y que los modelos de datos pueden evolucionar con el tiempo en respuesta a los requisitos cambiantes de la aplicación.
+
+Las aplicaciones que priorizan la disponibilidad y la escalabilidad se benefician de las características de arquitectura distribuida de MongoDB. Viene con soporte incorporado para alta disponibilidad, escala horizontal mediante fragmentación y escalabilidad de centros de datos múltiples a través de distribuciones geográficas.
+
+MongoDB tiene un lenguaje de consulta expresivo, que permite consultas ad hoc, indexación para búsquedas rápidas y agregación en tiempo real que proporciona formas poderosas de acceder y analizar datos mientras mantiene el rendimiento incluso cuando el tamaño de los datos crece exponencialmente.
+
+*Explore las características y servicios de MongoDB en https://www.mongodb.com/.*
+
 ### React
 
+**React es una biblioteca JavaScript declarativa y basada en componentes para construir interfaces de usuario**. Su naturaleza declarativa y modular facilita a los desarrolladores crear y mantener interfaces de usuario reutilizables, interactivas y complejas.
+
+Las aplicaciones grandes que muestran una gran cantidad de datos cambiantes pueden ser rápidas y receptivas si se crean con React, ya que se encarga de actualizar y representar eficientemente los componentes de la interfaz de usuario correctos cuando cambian datos específicos. React realiza esta representación eficiente con su notable implementación de un DOM virtual, que diferencia a React de otras bibliotecas de IU web que manejan actualizaciones de página con manipulaciones costosas directamente en el DOM del navegador.
+
+El desarrollo de interfaces de usuario con React también obliga a los programadores frontend a escribir código bien razonado y modular que sea reutilizable, más fácil de depurar, probar y ampliar.
+
+*Consulte los recursos en React en https://reactjs.org/.*
+
+Dado que las cuatro tecnologías están basadas en JavaScript, estas están inherentemente optimizadas para la integración. Sin embargo, la forma en que realmente se combinan en la práctica para formar la pila MERN puede variar según los requisitos de la aplicación y las preferencias del desarrollador, lo que hace que MERN sea personalizable y extensible a necesidades específicas.
 
 
+## Relevancia de MERN
+
+JavaScript ha recorrido un largo camino desde su inicio y está en constante crecimiento. Las tecnologías de pila MERN han desafiado el status quo y han abierto nuevos caminos para lo que es posible con JavaScript. Pero cuando se trata de desarrollar aplicaciones del mundo real que necesitan ser sostenibles, ¿es una opción digna? Algunas de las razones que justifican la elección de MERN para su próxima aplicación web se describen brevemente a continuación.
+
+### Consistencia en el stack de tecnología
+
+Como JavaScript se usa en todo momento, los desarrolladores no necesitan aprender y cambiar de marcha con frecuencia para trabajar con tecnologías muy diferentes. Esto también permite una mejor comunicación y comprensión entre los equipos que trabajan en diferentes partes de la aplicación web.
+
+### Menos tiempo para aprender, desarrollar, implementar y extender
+
+La coherencia en la stack también facilita el aprendizaje y el trabajo con MERN, lo que reduce la sobrecarga de adoptar una nueva stack y el tiempo para desarrollar un producto que funcione. Una vez que se configura la base de trabajo de una aplicación MERN y se establece un flujo de trabajo, se requiere menos esfuerzo para replicar, desarrollar y ampliar cualquier aplicación.
+
+### Ampliamente adoptado en la industria
+
+Las organizaciones de todos los tamaños han estado adoptando las tecnologías en esta stack en función de sus necesidades porque pueden crear aplicaciones más rápido, manejar requisitos muy diversos y administrar aplicaciones de manera más eficiente a escala.
+
+### Apoyo y crecimiento de la comunidad.
+
+Las comunidades de desarrolladores que rodean las tecnologías de stack MERN muy populares son bastante diversas y crecen regularmente. Con muchas personas que usan, reparan, actualizan y están dispuestas a ayudar a hacer crecer estas tecnologías, el sistema de soporte seguirá siendo fuerte en el futuro previsible. Estas tecnologías continuarán manteniéndose y es muy probable que los recursos estén disponibles en términos de documentación, bibliotecas complementarias y soporte técnico.
+
+La facilidad y los beneficios de usar estas tecnologías ya son ampliamente reconocidos. Debido a las compañías de alto perfil que continúan adoptando y adaptando, y al creciente número de personas que contribuyen a las bases del código, brindan soporte y crean recursos, las tecnologías en la stack MERN seguirán siendo relevantes durante mucho tiempo.
 
 
+## Gama de aplicaciones MERN
 
+Dadas las características únicas atribuidas a cada tecnología, junto con la facilidad de ampliar las funcionalidades de esta stack mediante la integración de otras tecnologías, la gama de aplicaciones que se pueden construir con esta stack es en realidad bastante diversa.
 
+En la actualidad, se espera que, por defecto, las aplicaciones web sean aplicaciones de cliente enriquecidas que sean inmersivas, interactivas y no se queden cortas en rendimiento y disponibilidad. La agrupación de las fortalezas de MERN lo hace perfecto para desarrollar aplicaciones web que cumplan estos mismos aspectos y demandas.
+
+Además, los atributos novedosos y futuros de algunas de estas tecnologías, como la manipulación de operaciones de bajo nivel con Node, las capacidades de transmisión de archivos grandes con MongoDB GridFS y las características de realidad virtual en la web que usan React 360, hacen posible construir aún más complejo y Aplicaciones únicas con MERN.
+
+Puede parecer razonable elegir características específicas en las tecnologías MERN y discutir por qué no funcionan para ciertas aplicaciones. Pero dada la naturaleza versátil de cómo una stack MERN puede unirse y extenderse; Estas inquietudes pueden abordarse en MERN caso por caso. En este libro, demostraremos cómo hacer tales consideraciones cuando nos enfrentamos a requisitos y demandas específicos en la aplicación que se está creando.
+
+### Aplicaciones MERN desarrolladas en este libro
+
+#### Plataforma de redes sociales
+
+#### Mercado en línea
+
+#### Aplicación de transmisión de medios
+
+#### Juego de realidad virtual para la web
 
 
 
