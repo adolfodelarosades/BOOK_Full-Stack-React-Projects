@@ -150,7 +150,7 @@ Puede parecer razonable elegir características específicas en las tecnologías
 
 Para demostrar la amplitud de posibilidades con MERN y cómo puede comenzar fácilmente a construir una aplicación web con diversas características, este libro mostrará aplicaciones web de uso diario junto con experiencias web complejas y raras:
 
-<img src="1-aplicaciones.jpg">
+<img src="images/1-aplicaciones.jpg">
 
 La captura de pantalla anterior da una idea de las cuatro aplicaciones diferentes de MERN desarrolladas en el resto de este libro.
 
@@ -169,6 +169,37 @@ Para probar algunas capacidades avanzadas de MERN, una aplicación más inmersiv
 #### VR game for the web (Juego de realidad virtual para la web)
 
 El lanzamiento de React 360 hace posible aplicar capacidades de realidad virtual web a las interfaces de usuario de React. Exploraremos cómo crear experiencias web raras con React 360 en MERN al crear una aplicación básica de juegos de realidad virtual para la web. Los usuarios podrán crear y jugar juegos de realidad virtual, donde cada juego tendrá objetos animados de realidad virtual que el jugador puede recoger para completar el juego.
+
+
+## Estructura del libro
+
+Este libro tiene como objetivo ayudar a los desarrolladores de JavaScript que tienen una experiencia de cero a algo con la stack MERN, a configurar y comenzar a desarrollar aplicaciones web de diversa complejidad. Incluye pautas para construir y ejecutar las diferentes aplicaciones complementadas con fragmentos de código y explicaciones de conceptos clave.
+
+El libro está organizado en cinco partes, progresando de temas básicos a avanzados, llevándote en un viaje de construir MERN desde cero, luego usándolo para desarrollar diferentes aplicaciones con características simples a complejas, mientras demuestra cómo extender las capacidades de stack MERN basada en los requisitos de la aplicación.
+
+### Comenzando con MERN
+
+El Capítulo 1, Liberación de aplicaciones de React con MERN y el Capítulo 2, Preparación del entorno de desarrollo establecen el contexto para desarrollar aplicaciones web en una stack MERN y lo guían a través de la configuración de su entorno de desarrollo.
+
+### Construyendo MERN desde cero - una aplicación esqueleto
+
+El Capítulo 3, Creación de un backend con MongoDB, Express y Node, y el Capítulo 4, Agregar una interfaz React para completar MERN muestran cómo unir las tecnologías de stack MERN para formar una aplicación web esqueleto con características mínimas y básicas. Esta esquelética aplicación MERN actúa como base para las cuatro aplicaciones principales desarrolladas en el resto del libro.
+
+### Desarrollo de aplicaciones web básicas con MERN
+
+En esta parte, se familiarizará con los atributos centrales de una aplicación web MERN stack al desarrollar dos aplicaciones del mundo real: una social media platform simple en el Capítulo 5, *Comenzando con una aplicación social media platform  simple*, y un online marketplace en el Capítulo 6, *Ejercicio de nuevas habilidades MERN con un Online Marketplace y Capítulo 7, Ampliación del Marketplace para pedidos y pagos.
+
+### Avanzar a aplicaciones complejas MERN
+
+El Capítulo 8, *Media Streaming Application*, Capítulo 9, *Personalización del reproductor multimedia y mejora del SEO*, Capítulo 10, *Desarrollo de un Web-Based VR Game, basado en la web*, y Capítulo 11, *Hacer dinámico el VR Game usando MERN* muestran cómo se puede usar esta stack para desarrollar aplicaciones con características más complejas e inmersivas, como transmisión de medios y realidad virtual con React 360.
+
+### Avanzando con MERN
+
+Finalmente, el Capítulo 12, *Siguiendo las mejores prácticas y desarrollando MERN*, resume los capítulos anteriores y las aplicaciones desarrolladas al expandir las mejores prácticas a seguir para hacer aplicaciones MERN exitosas, sugiriendo mejoras y desarrollos adicionales.
+
+Puede optar por utilizar el libro fuera del orden prescrito en función de su nivel de experiencia y preferencia. Un desarrollador que es muy nuevo en MERN puede seguir el camino establecido en el libro. Para un desarrollador JS más experimentado, los capítulos en el Building MERN desde cero: una sección de aplicación esqueleto sería un buen lugar para comenzar a configurar la aplicación base, luego elegir cualquiera de las cuatro aplicaciones para construir y extender.
+
+
 
 
 
