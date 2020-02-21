@@ -68,17 +68,26 @@ MongoDB, Express, React y Node se utilizan en conjunto para crear aplicaciones w
 
 Las cuatro tecnologías son gratuitas, de código abierto, multiplataforma y basadas en JavaScript, con un amplio soporte de la comunidad y la industria. Cada tecnología tiene un conjunto único de atributos, que cuando se integran juntos forman full JavaScript stack simple pero efectiva para el desarrollo web.
 
-### Node **********
+### Node
 
 Node se desarrolló como un JavaScript runtime environment integrado en el motor V8 JavaScript de Chrome. Node hizo posible comenzar a usar JavaScript en el lado del servidor para crear una variedad de herramientas y aplicaciones más allá de los casos de uso anteriores que se limitaban dentro de un navegador.
 
-Node tiene una arquitectura controlada por eventos capaz de E / S asíncrona sin bloqueo. Su exclusivo modelo de E / S sin bloqueo elimina el enfoque de espera para atender solicitudes. Esto permite crear aplicaciones web en tiempo real escalables y livianas que pueden manejar eficientemente muchas solicitudes.
+Node tiene una arquitectura controlada por eventos capaz de I/O asíncrona sin bloqueo. Su exclusivo modelo de I/O sin bloqueo elimina el enfoque de espera para atender solicitudes. Esto permite crear aplicaciones web en tiempo real escalables y livianas que pueden manejar eficientemente muchas solicitudes.
 
 El sistema de administración de paquetes predeterminado de Node, el administrador de paquetes de Node o npm, viene incluido con la instalación de Node. Npm da acceso a cientos de miles de paquetes Node reutilizables creados por desarrolladores de todo el mundo y se jacta de que actualmente es el ecosistema más grande de bibliotecas de código abierto en el mundo.
 
 Obtenga más información sobre Node en https://nodejs.org/en/ y explore los módulos npm disponibles en https://www.npmjs.com/.
 
 ### Express
+
+Express es un marco básico para crear aplicaciones web y API con un servidor Node. Proporciona una capa simple de características fundamentales de la aplicación web que complementa Node.
+
+En cualquier aplicación web desarrollada con Node, Express se puede usar como un marco web de enrutamiento y middleware que tiene una funcionalidad mínima propia: una aplicación Express es esencialmente una serie de llamadas a funciones de middleware.
+
+Las funciones de middleware son funciones que tienen acceso a los objetos de solicitud y respuesta HTTP, y también la siguiente función de middleware en el ciclo de solicitud-respuesta de la aplicación web.
+Es posible insertar casi cualquier middleware compatible de su elección en la cadena de manejo de solicitudes, en casi cualquier orden, haciendo que Express sea muy flexible para trabajar.
+
+Descubra lo que es posible con Express.js en expressjs.com.
 
 ### MongoDB
 
