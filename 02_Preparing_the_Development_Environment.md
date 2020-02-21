@@ -140,5 +140,93 @@ Para comenzar a usar Git, primero instálelo en su máquina local o entorno de d
 Los servicios de alojamiento de repositorios Git basados en la nube, como GitHub y BitBucket, ayudan a compartir su último código en espacios de trabajo y entornos de implementación, y también para hacer una copia de seguridad de su código. Estos servicios incluyen muchas funciones útiles para ayudar con la gestión de código y el flujo de trabajo de desarrollo. Para comenzar, puede crear una cuenta y configurar repositorios remotos para sus bases de código.
 
 Todas estas herramientas esenciales enriquecerán su flujo de trabajo de desarrollo web y aumentarán la productividad una vez que complete la configuración necesaria en su espacio de trabajo y comience a construir aplicaciones MERN.
+      
+      
+## Configuración de tecnologías de pila MERN
+
+Las tecnologías de stack MERN se están desarrollando y actualizando a medida que se escribe este libro, por lo que para el trabajo demostrado a lo largo de este libro, utilizamos las últimas versiones estables en el momento de la redacción. Las pautas de instalación para la mayoría de estas tecnologías dependen del entorno del sistema de sus espacios de trabajo, por lo que esta sección apunta a todos los recursos de instalación relevantes, y también actúa como una guía para configurar una stack MERN completamente funcional.
+
+### MongoDB
+
+MongoDB debe configurarse y ejecutarse en el entorno de desarrollo antes de agregar características de la base de datos a las aplicaciones MERN. Al momento de escribir, la versión estable actual de MongoDB es 3.6.3, y esta versión de MongoDB Community Edition se usa para desarrollar las aplicaciones en este libro. El resto de esta sección proporciona recursos sobre cómo instalar y ejecutar MongoDB.
+
+#### Instalación
+
+Debe instalar e iniciar MongoDB en su espacio de trabajo para poder usarlo para el desarrollo. El proceso de instalación y arranque de MongoDB depende de las especificaciones del espacio de trabajo:
+
+* Los servicios de desarrollo en la nube tendrán sus propias instrucciones para instalar y configurar MongoDB. Por ejemplo, los pasos prácticos para Cloud9 se pueden encontrar en: https://community.c9.io/t/setting-up-mongodb/1717.
+
+* Las guías para la instalación en su máquina local se detallan en: https://docs.mongodb.com/manual/installation/.
+
+#### Ejecutar el shell mongo
+
+El *shell mongo* es una herramienta interactiva para MongoDB y un buen lugar para familiarizarse con las operaciones de MongoDB. Una vez que MongoDB está instalado y en ejecución, puede ejecutar el shell mongo en la línea de comando. En el shell mongo, puede probar comandos para consultar y actualizar datos, así como realizar operaciones administrativas.
+
+### Nodo
+
+La implementación del servidor back-end para las aplicaciones MERN se basa en Node y también en npm. Al momento de escribir, 8.11.1 es la última versión estable de Nodo disponible, y viene incluida con la versión 5.6.0 de npm. Sin embargo, la última versión disponible para npm es 5.8.0, por lo que después de instalar Node, npm deberá actualizarse como se describe en la siguiente sección.
+
+#### Instalación
+
+Node se puede instalar mediante descarga directa, instaladores o el administrador de versiones de Node:
+
+* Puede instalar Node descargando directamente el código fuente o un instalador predefinido específico para su plataforma de espacio de trabajo. Las descargas están disponibles en nodejs.org/en/download.
+
+* Los servicios de desarrollo en la nube pueden venir con Node preinstalado, como en Cloud9, o tendrán instrucciones específicas para agregar y actualizar Node.
+
+* Los servicios de desarrollo en la nube pueden venir con Node preinstalado, como en Cloud9, o tendrán instrucciones específicas para agregar y actualizar Node.
+
+Para probar si la instalación fue exitosa, puede abrir la línea de comando y ejecutar el `nodo -v` para ver si devuelve correctamente el número de versión.
+
+```sh
+mini-de-adolfo:~ adolfodelarosa$ node -v
+v12.14.0
+```
+
+##### Actualización de versiones npm
+
+Para instalar npm versión 5.8.0, ejecute el siguiente comando de instalación desde la línea de comando y verifique la versión con `npm -v`:
+
+```sh
+npm install -g npm@5.8.0 
+npm -v
+```
+
+```sh
+mini-de-adolfo:~ adolfodelarosa$ npm -v
+6.13.4
+```
+
+#### Gestión de versiones de nodo con nvm
+
+Si necesita mantener varias versiones de Node y npm para diferentes proyectos, nvm es una herramienta útil de línea de comandos para instalar y administrar diferentes versiones en el mismo espacio de trabajo. Tienes que instalar nvm por separado. Las instrucciones para la configuración se pueden encontrar en: github.com/creationix/nvm.
+
+### Módulos npm para MERN
+
+Las tecnologías de stack MERN restantes están disponibles como módulos npm y se pueden agregar a cada proyecto mediante la `npm install`. Estos incluyen módulos clave, como React y Express, que se requieren para ejecutar cada aplicación MERN, y también módulos que serán necesarios durante el desarrollo. En esta sección, enumeramos y discutimos los módulos, luego vemos cómo usar los módulos en un proyecto de trabajo en la siguiente sección.
+
+#### Módulos clave
+
+Para integrar las tecnologías de stack MERN y ejecutar sus aplicaciones, necesitaremos los siguientes módulos npm:
+
+* **React**: Para comenzar a usar React, necesitaremos dos módulos:
+
+   * `react`
+
+   * `react-dom`
+   
+* **Express**: para usar Express en su código, necesitará el módulo `express`
+
+* **MongoDB**: para usar MongoDB con aplicaciones Node, también debe agregar el controlador, que está disponible como un módulo npm llamado `mongodb``
+
+#### Módulos devDependency
+
+
+
+
+
+
+
+
 
 
