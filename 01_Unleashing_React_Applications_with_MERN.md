@@ -206,7 +206,7 @@ El contenido de este libro está orientado a la práctica y cubre los pasos de i
 
 Los capítulos que analizan las implementaciones de código apuntarán a los repositorios de GitHub que contienen el código completo con instrucciones sobre cómo ejecutar el código. Puede extraer el código, instalarlo y ejecutarlo antes de leer el capítulo:
 
-<img src="images/1-git.jpg">
+<img src="images/1-git.png">
 
 
 Puede considerar los siguientes pasos recomendados descritos para seguir las implementaciones en este libro:
