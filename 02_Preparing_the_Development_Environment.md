@@ -991,11 +991,14 @@ Si ha llegado hasta aquí, felicidades, está listo para comenzar a desarrollar 
 
 ## Resumen
 
+En este capítulo, discutimos las opciones de herramientas de desarrollo y cómo instalar tecnologías MERN, y luego escribimos código para verificar si el entorno de desarrollo está configurado correctamente.
 
+Comenzamos analizando el workspace, IDE, el software de control de versiones y las opciones de navegador adecuadas para el desarrollo web. Puede seleccionar entre estas opciones según sus preferencias como desarrollador.
 
+Luego, configuramos las tecnologías del stack MERN instalando primero MongoDB, Node y npm, y luego agregando las bibliotecas requeridas restantes usando npm.
 
+Antes de pasar a escribir código para verificar esta configuración, configuramos Webpack y Babel para compilar y agrupar código durante el desarrollo, y para construir código listo para producción. Aprendimos que es necesario compilar el código ES6 y JSX que se utiliza para desarrollar una aplicación MERN antes de abrir la aplicación en los navegadores.
 
+Además, hicimos que el flujo de desarrollo sea eficiente al incluir React Hot Loader para el desarrollo frontend, configurar Nodemon para el desarrollo de backend y compilar el código del cliente y del servidor en un solo comando cuando el servidor se ejecuta durante el desarrollo.
 
-
-
-
+En el próximo capítulo, usamos esta configuración para comenzar a construir una aplicación MERN esqueleto que funcionará como base para aplicaciones con todas las funciones.
