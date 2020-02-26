@@ -273,7 +273,34 @@ Generaremos estos archivos de proyecto en la siguiente estructura de carpetas pa
 
 El código discutido en esta sección está disponible en GitHub en el repositorio en: https://github.com/shamahoque/mern-simplesetup. Puede clonar este código y ejecutarlo a medida que avanza por las explicaciones del código en el resto de este capítulo.
 
-### Inicializando package.json e instalando módulos npm
+### Inicializando package.json e Instalando Módulos npm
+
+Comenzaremos usando **npm** para instalar todos los módulos requeridos. Se recomienda agregar un archivo **`package.json`** en cada carpeta de proyecto para mantener, documentar y compartir los módulos **npm** que se utilizan en la aplicación MERN. El archivo **`package.json`** contendrá metainformación sobre la aplicación, así como también una lista de las dependencias del módulo.
+
+Realice los pasos descritos a continuación para generar un archivo **`package.json`**, modificarlo y usarlo para instalar los módulos **npm**:
+
+* **`npm init`**: Desde la línea de comando, ingrese a su carpeta de proyecto y ejecute **`npm init`**. Se le harán una serie de preguntas y luego se generará automáticamente un archivo **`package.json`** con sus respuestas.
+
+* **`dependencies`**: Abra el **`package.json`** en su editor y modifique el objeto JSON para agregar los módulos clave y `react-hot-loader` como `dependencies` regulares.
+
+   *La ruta del archivo mencionada antes de un bloque de código indica la ubicación del código en el directorio del proyecto. Esta convención se ha mantenido a lo largo del libro para proporcionar un mejor contexto y orientación a medida que sigue el código.*
+   
+   `mern-simplesetup/package.json`:
+   
+```sh
+"dependencies": {
+   "express": "^4.16.3",
+    "mongodb": "^3.0.7",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.1.2"
+}
+```
+
+* `devDependencies`: Modifica `package.json` para agregar los siguientes módulos npm necesarios durante el desarrollo como `devDependencies`.
+
+* `npm install`: Salve `package.json` y desde la terminal, ejecute `npm install` para buscar y agregar todos estos módulos a su proyecto.
+
 
 ### Configuración de Babel, Webpack y Nodemon
 
