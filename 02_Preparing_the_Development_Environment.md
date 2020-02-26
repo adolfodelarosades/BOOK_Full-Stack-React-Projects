@@ -301,6 +301,164 @@ Realice los pasos descritos a continuación para generar un archivo **`package.j
 
 * `npm install`: Salve `package.json` y desde la terminal, ejecute `npm install` para buscar y agregar todos estos módulos a su proyecto.
 
+#### Mis Pasos
+
+* Crear carpeta ``
+
+* `npm init` Dentro de la carpeta:
+
+```sh
+192:mern-simplesetup-master adolfodelarosa$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (mern-simplesetup-master) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+About to write to /Users/adolfodelarosa/Documents/Udemy2020/BOOKS/01_Full-Stack_React_Projects/MisProyectos/mern-simplesetup-master/package.json:
+
+{
+  "name": "mern-simplesetup-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+
+┌───────────────────────────────────────────────────────────────────┐
+│                      npm update check failed                      │
+│                Try running with sudo or get access                │
+│               to the local update config store via                │
+│ sudo chown -R $USER:$(id -gn $USER) /Users/adolfodelarosa/.config │
+└───────────────────────────────────────────────────────────────────┘
+192:mern-simplesetup-master adolfodelarosa$
+```
+Con esto se crea el archivo `package.json`:
+
+```sh
+{
+  "name": "mern-simplesetup-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+Instalar Express:
+
+```sh
+192:mern-simplesetup-master adolfodelarosa$ npm i express --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN mern-simplesetup-master@1.0.0 No description
+npm WARN mern-simplesetup-master@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 126 packages in 3.82s
+found 0 vulnerabilities
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│                      npm update check failed                      │
+│                Try running with sudo or get access                │
+│               to the local update config store via                │
+│ sudo chown -R $USER:$(id -gn $USER) /Users/adolfodelarosa/.config │
+└───────────────────────────────────────────────────────────────────┘
+192:mern-simplesetup-master adolfodelarosa$ 
+```
+
+Esto modifica el archivo `package.json`
+
+```sh
+{
+  "name": "mern-simplesetup-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+```
+
+Instalar MongoDB
+```sh
+192:mern-simplesetup-master adolfodelarosa$ npm i mongodb --save
+```
+
+Instalar Reac
+
+```sh
+192:mern-simplesetup-master adolfodelarosa$ npm i react --save
+```
+Instalar Reac Dom
+
+```sh
+npm i react-dom --save
+```
+
+Instalar React Hot Loader
+
+```sh
+192:mern-simplesetup-master adolfodelarosa$ npm i react-hot-loader --save
+```
+
+Todos estas instalaciones han modificado `package.json`
+
+```sh
+{
+  "name": "mern-simplesetup-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19"
+  }
+}
+
+```
+
+```sh
+```
+
+
 
 ### Configuración de Babel, Webpack y Nodemon
 
