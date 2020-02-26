@@ -299,13 +299,31 @@ Realice los pasos descritos a continuación para generar un archivo **`package.j
 
 * `devDependencies`: Modifica `package.json` para agregar los siguientes módulos npm necesarios durante el desarrollo como `devDependencies`.
 
+   `mern-simplesetup/package.json`:
+   
+   ```sh
+   "devDependencies": {
+        "babel-core": "^6.26.2",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "nodemon": "^1.17.3",
+        "webpack": "^4.6.0",
+        "webpack-cli": "^2.0.15",
+        "webpack-dev-middleware": "^3.1.2",
+        "webpack-hot-middleware": "^2.22.1",
+        "webpack-node-externals": "^1.7.2"
+   }
+   ```
+
 * `npm install`: Salve `package.json` y desde la terminal, ejecute `npm install` para buscar y agregar todos estos módulos a su proyecto.
 
 #### Mis Pasos
 
-* Crear carpeta ``
+* Crear carpeta `mern-simplesetup-master`
 
-* `npm init` Dentro de la carpeta:
+* `npm init` dentro de la carpeta `mern-simplesetup-master`:
 
 ```sh
 192:mern-simplesetup-master adolfodelarosa$ npm init
@@ -353,6 +371,7 @@ Is this OK? (yes)
 └───────────────────────────────────────────────────────────────────┘
 192:mern-simplesetup-master adolfodelarosa$
 ```
+
 Con esto se crea el archivo `package.json`:
 
 ```sh
@@ -372,159 +391,160 @@ Con esto se crea el archivo `package.json`:
 
 * Instalar **Express**:
 
-```sh
-192:mern-simplesetup-master adolfodelarosa$ npm i express --save
-```
+   ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i express --save
+   ```
 
-Esto modifica el archivo `package.json`
+   Esto modifica el archivo `package.json`
 
-```sh
-{
-  "name": "mern-simplesetup-master",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
-}
-```
+   ```sh
+   {
+     "name": "mern-simplesetup-master",
+     "version": "1.0.0",
+     "description": "",
+     "main": "index.js",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
+       "express": "^4.17.1"
+     }
+   }
+   ```
 
-* Instalar **MongoDB**
-```sh
-192:mern-simplesetup-master adolfodelarosa$ npm i mongodb --save
-```
+   * Instalar **MongoDB**
+   
+   ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i mongodb --save
+   ```
 
-* Instalar **Reac**
+   * Instalar **Reac**
 
-```sh
-192:mern-simplesetup-master adolfodelarosa$ npm i react --save
-```
-* Instalar **Reac Dom**
+   ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i react --save
+   ```
+   
+   * Instalar **Reac Dom**
 
-```sh
-npm i react-dom --save
-```
+   ```sh
+   npm i react-dom --save
+   ```
 
-* Instalar **React Hot Loader**
+   * Instalar **React Hot Loader**
 
-```sh
-192:mern-simplesetup-master adolfodelarosa$ npm i react-hot-loader --save
-```
+   ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i react-hot-loader --save
+   ```
 
-Todos estas instalaciones han modificado `package.json`
+   Todos estas instalaciones han modificado `package.json`
 
-```sh
-{
-  "name": "mern-simplesetup-master",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongodb": "^3.5.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-hot-loader": "^4.12.19"
-  }
-}
-
-```
+   ```sh
+   {
+     "name": "mern-simplesetup-master",
+     "version": "1.0.0",
+     "description": "",
+     "main": "index.js",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "author": "",
+     "license": "ISC",
+     "dependencies": {
+       "express": "^4.17.1",
+       "mongodb": "^3.5.4",
+       "react": "^16.12.0",
+       "react-dom": "^16.12.0",
+       "react-hot-loader": "^4.12.19"
+     }
+   }
+   ```
 
 ##### Instalar las Dependencia de Desarrollo `devDependencies`:
 
 * Instalar **babel-core**:
 
-```sh
-192:mern-simplesetup-master adolfodelarosa$ npm i babel-core --save-dev
-```
-
+   ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i babel-core --save-dev
+   ```
+    
+   Esto crea una nueva sección `devDependencies` en `package.com`:
+    
+   ```sh
+   {
+       "name": "mern-simplesetup-master",
+       "version": "1.0.0",
+       "description": "",
+       "main": "index.js",
+       "scripts": {
+           "test": "echo \"Error: no test specified\" && exit 1"
+       },
+       "author": "",
+       "license": "ISC",
+       "dependencies": {
+           "express": "^4.17.1",
+           "mongodb": "^3.5.4",
+           "react": "^16.12.0",
+           "react-dom": "^16.12.0",
+           "react-hot-loader": "^4.12.19"
+       },
+       "devDependencies": {
+           "babel-core": "^6.26.3"
+       }
+   }
+   ```
+   
 * Instalar **babel-loader**:
 
-```sh
+   ```sh
+   ```
+   
+* Instalar **babel-preset-env**:
 
-```
+   ```sh
+   ```
 
-* Instalar ** **:
+* Instalar **babel-preset-react**:
 
-```sh
+   ```sh
+   ```
 
-```
+* Instalar **babel-preset-stage-2**:
 
-* Instalar ** **:
+   ```sh
+   ```
 
-```sh
+* Instalar **nodemon**:
 
-```
+   ```sh
+   ```
 
-* Instalar ** **:
+* Instalar **webpack**:
 
-```sh
-
-```
-
-
-* Instalar ** **:
-
-```sh
-
-```
-
-
-* Instalar ** **:
-
-```sh
-
-```
+   ```sh
+   ```
 
 
-* Instalar ** **:
+* Instalar **webpack-cli**:
 
-```sh
+   ```sh
+   ```
 
-```
+* Instalar **webpack-dev-middleware**:
 
+   ```sh
+   ```
 
-* Instalar ** **:
+* Instalar **webpack-hot-middleware**:
 
-```sh
+   ```sh
+   ```
 
-```
+* Instalar **webpack-node-externals**:
 
-* Instalar ** **:
-
-```sh
-
-```
-
-* Instalar ** **:
-
-```sh
-
-```
-
-* Instalar ** **:
-
-```sh
-
-```
-
-* Instalar ** **:
-
-```sh
-
-```
-
+   ```sh
+   ```
 
 
 ### Configuración de Babel, Webpack y Nodemon
