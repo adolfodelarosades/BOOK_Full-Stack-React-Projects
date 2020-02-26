@@ -1,119 +1,122 @@
-# 3. Building a Backend with MongoDB, Express, and Node
-Skeleton application overview
+# 3. Construyendo un Backend con MongoDB, Express y Node
 
-Feature breakdown
+## Descripción General de la Aplicación Esqueleto
 
-Focus of this chapter – the backend
+### Desglose de Funciones
 
-User model
+### Enfoque de este Capítulo: el Backend
 
-API endpoints for user CRUD
+#### Modelo de Usuario
 
-Auth with JSON Web Tokens
+#### Puntos Finales API para el Usuario CRUD
 
-How JWT works
-Implementing the skeleton backend
+#### Autenticación con Tokens Web JSON
 
-Folder and file structure
+##### Cómo Funciona JWT
 
-Setting up the project
+## Implementación del Backend Esqueleto
 
-Initializing package.json
+### Carpeta y Estructura de Archivos
 
-Development dependencies
+### Configuración del Proyecto
 
-Babel
+#### Inicializando `package.json`
 
-Webpack
+#### Dependencias de Desarrollo
 
-Nodemon
+##### Babel
 
-Config variables
+##### Webpack
 
-Running scripts
+##### Nodemon
 
-Preparing the server
+#### Variables de Configuración
 
-Configuring Express
+#### Ejecución de Scripts
 
-Starting the server
+### Preparando el Servidor
 
-Setting up Mongoose and connecting to MongoDB
+#### Configuración de Express
 
-Serving an HTML template at a root URL
+#### Iniciando el Servidor
 
-User model
+#### Configuración de Mongoose y Conexión a MongoDB
 
-User schema definition
+#### Sirviendo una Plantilla HTML en una URL Raíz
 
-Name
+### Modelo de Usuario
 
-Email
+#### Definición de Esquema de Usuario
 
-Created and updated timestamps
+##### Nombre
 
-Hashed password and salt
+##### Email
 
-Password for auth
+##### Marcas de Tiempo Creadas y Actualizadas
 
-As a virtual field
+##### Contraseña hash y sal
 
-Encryption and authentication
+#### Contraseña para Autenticación
 
-Password field validation
+##### Como Campo Virtual
 
-Mongoose error handling
+##### Cifrado y Autenticación
 
-User CRUD API
+##### Validación de Campo de Contraseña
 
-User routes
+#### Manejo de Errores de Mangosta
 
-User controller
+### API de Usuario CRUD
 
-Creating a new user
+#### Rutas de Usuario
 
-Listing all users
+#### Controlador de Usuario
 
-Loading a user by ID to read, update, or delete
+##### Crear un Nuevo Usuario
 
-Loading
+##### Listado de Todos los Usuarios
 
-Reading
+##### Carga de un Usuario por ID para Leer, Actualizar o Eliminar
 
-Updating
+###### Cargando
 
-Deleting
+###### Leyendo
 
-User auth and protected routes
+###### Actualización
 
-Auth routes
+###### Eliminar
 
-Auth controller
+##### Autenticación de Usuario y Rutas Protegidas
 
-Sign-in
+###### Rutas de Autenticación
 
-Sign-out
+###### Controlador de Autenticación
 
-Protecting routes with express-jwt
+###### Registrarse
 
-Requiring sign-in
+###### Desconectar
 
-Authorizing signed in users
+###### Protección de Rutas con express-jwt
 
-Protecting user routes
+####### Requerir Inicio de Sesión
 
-Auth error handling for express-jwt
+####### Autorización de Usuarios Registrados
 
-Checking the standalone backend
+####### Protección de Rutas de Usuario
 
-Creating a new user
+####### Manejo de Errores de Autenticación para express-jwt
 
-Fetching the user list
+### Comprobación del backend independiente
 
-Trying to fetch a single user
+#### Crear un nuevo usuario
 
-Signing in
+#### Obteniendo la lista de usuarios
 
-Fetching a single user successfully
+#### Intentando buscar un solo usuario
 
-Summary
+#### Iniciando sesión
+
+#### Obteniendo un solo usuario con éxito
+
+### Resumen
+
