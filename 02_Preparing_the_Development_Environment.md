@@ -935,7 +935,22 @@ app.listen(port, function onStart(err) {
 })
 ```
 
-### Conexión del servidor a MongoDB
+### Conexión del Server a MongoDB
+
+Para conectar su servidor Node a MongoDB, agregue el siguiente código a `server.js` y asegúrese de tener MongoDB ejecutándose en su workspace.
+
+`mern-simplesetup/server/server.js`:
+
+```sh
+import { MongoClient } from 'mongodb'
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/mernSimpleSetup'
+MongoClient.connect(url, (err, db)=>{
+  console.log("Connected successfully to mongodb server")
+  db.close()
+})
+```
+
+En este ejemplo de código, `MongoClient` es el driver que se conecta a la instancia de `MongoDB` en ejecución utilizando su `url` y nos permite implementar el código relacionado con la base de datos en el backend.
 
 ### npm ejecutar scripts
 
