@@ -498,52 +498,62 @@ Con esto se crea el archivo `package.json`:
 * Instalar **babel-loader**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i babel-loader --save-dev
    ```
    
 * Instalar **babel-preset-env**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i babel-preset-env --save-dev
    ```
 
 * Instalar **babel-preset-react**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i babel-preset-react --save-dev
    ```
 
 * Instalar **babel-preset-stage-2**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i babel-preset-stage-2 --save-dev
    ```
 
 * Instalar **nodemon**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i nodemon --save-dev
    ```
 
 * Instalar **webpack**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i webpack --save-dev
    ```
 
 
 * Instalar **webpack-cli**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i webpack-cli --save-dev
    ```
 
 * Instalar **webpack-dev-middleware**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i webpack-dev-middleware --save-dev
    ```
 
 * Instalar **webpack-hot-middleware**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i webpack-hot-middleware --save-dev
    ```
 
 * Instalar **webpack-node-externals**:
 
    ```sh
+   192:mern-simplesetup-master adolfodelarosa$ npm i webpack-node-externals --save-dev
    ```
 
 
