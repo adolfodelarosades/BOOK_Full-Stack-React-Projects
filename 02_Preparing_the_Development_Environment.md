@@ -979,6 +979,16 @@ Actualice el archivo `package.json` para agregar los siguientes scripts de ejecu
 
 ### Desarrollo y depuración en tiempo real.
 
+Para ejecutar el código desarrollado hasta ahora, y para asegurarse de que todo funcione, puede seguir los siguientes pasos:
+
+1. **Ejecute la aplicación desde la línea de comando**: `npm run development`.
+
+2. **Cargar en el navegador**: Abra la URL raíz en el navegador, que es `http://localhost:3000` si está utilizando la configuración de su máquina local. Debería ver una página con el título `MERN Kickstart` que solo muestra `Hello World!`.
+
+3. **Desarrolle código y depure en vivo**: Cambie el texto `'Hello World!'` del componente `HelloWorld.js` simplemente a `'hello'`. Guarde los cambios para ver la actualización instantánea en el navegador y también verifique la salida de la línea de comando para ver que `bundle.js` no se vuelve a crear. Del mismo modo, también puede ver actualizaciones instantáneas cuando cambia el código del lado del servidor, lo que aumenta la productividad durante el desarrollo.
+
+Si ha llegado hasta aquí, felicidades, está listo para comenzar a desarrollar aplicaciones MERN interesantes.
+
 ## Resumen
 
 
