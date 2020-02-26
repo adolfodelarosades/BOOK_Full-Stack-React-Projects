@@ -670,24 +670,26 @@ const config = {
 }
 ```
 
-* mode sets process.env.NODE_ENV to the given value and tells Webpack to use its built-in optimizations accordingly. If not explicitly set, it defaults to the value 'production'. It can also be set via the command line by passing the value as a CLI argument.
+* `mode` establece `process.env.NODE_ENV` ten el valor dado y le dice a Webpack que use sus optimizaciones integradas en consecuencia.  Si no se establece explícitamente, el valor predeterminado es `'production'`. También se puede establecer a través de la línea de comando pasando el valor como un argumento CLI.
 
-* devtool specifies how source maps are generated, if at all. Generally, a source map provides a way of mapping code within a compressed file back to its original position in a source file to aid debugging.
+* `devtool` especifica cómo se generan los mapas de origen, si es que lo hace. En general, un mapa fuente proporciona una forma de asignar el código dentro de un archivo comprimido a su posición original en un archivo fuente para ayudar a la depuración.
 
-* entry specifies the entry file where Webpack starts bundling, in this case with the main.js file in the client folder. 
+* `entry` especifica el archivo de entrada donde Webpack comienza a agruparse, en este caso con el archivo `main.js` en la carpeta `client`. 
 
-* output specifies the output path for the bundled code, in this case, set to dist/bundle.js.
+* `output` especifica la ruta de salida para el código incluido, en este caso, establecido en `dist/bundle.js`.
 
-* publicPath allows specifying the base path for all assets in the application.
+* `publicPath` permite especificar la ruta base para todos los activos en la aplicación.
 
-* module sets the regex rule for the file extension to be used for transpilation, and the folders to be excluded. The transpilation tool to be used here is babel-loader.
+* `module` establece la regla de regex (expresión regular) para la extensión de archivo que se utilizará para la transpilación, y las carpetas que se excluirán. La herramienta de transpilación que se utilizará aquí es `babel-loader`.
 
-* HotModuleReplacementPlugin enables hot module replacement for react-hot-loader.
+* `HotModuleReplacementPlugin` permite el reemplazo del módulo en caliente para `react-hot-loader`.
 
-* NoEmitOnErrorsPlugin allows skipping emitting when there are compile errors.
+* `NoEmitOnErrorsPlugin` permite omitir la emisión cuando hay errores de compilación.
 
 
-##### Configuración del paquete web del lado del servidor
+##### Server-side Webpack configuration (Configuración del Webpack del Lado del Servidor)
+
+
 
 ##### Configuración del paquete web del lado del cliente para producción
 
