@@ -689,19 +689,212 @@ const config = {
 
 ##### Server-side Webpack configuration (Configuración del Webpack del Lado del Servidor)
 
+Modifique el código para requerir `nodeExternals` y actualice el objeto `config` con lo siguiente en su archivo `webpack.config.server.js` para configurar Webpack para agrupar del lado del servidor:
 
+`mern-simplesetup/webpack.config.server.js`:
 
-##### Configuración del paquete web del lado del cliente para producción
+```sh
+const config = {
+    name: "server",
+    entry: [ path.join(CURRENT_WORKING_DIR , './server/server.js') ],
+    target: "node",
+    output: {
+        path: path.join(CURRENT_WORKING_DIR , '/dist/'),
+        filename: "server.generated.js",
+        publicPath: '/dist/',
+        libraryTarget: "commonjs2"
+    },
+    externals: [nodeExternals()],
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [ 'babel-loader' ]
+            }
+        ]
+    }
+}
+```
+
+La opción `mode` no se establece aquí explícitamente, pero se pasará según sea necesario al ejecutar los comandos de Webpack con respecto a la ejecución para el desarrollo o la construcción para la producción.
+
+Webpack comienza a agrupar desde la carpeta del servidor con `server.js`, luego genera el código agrupado en `server.generated.js` en la carpeta `dist`.
+
+##### Client-side Webpack Configuración para Producción
+
+Para preparar el código del lado del cliente para la producción, actualice el objeto `config` con el siguiente código en su archivo `webpack.config.client.production.js`.
+
+`mern-simplesetup/webpack.config.client.production.js`:
+
+```sh
+const config = {
+    mode: "production",
+    entry: [
+        path.join(CURRENT_WORKING_DIR, 'client/main.js')
+    ],
+    output: {
+        path: path.join(CURRENT_WORKING_DIR , '/dist'),
+        filename: 'bundle.js',
+        publicPath: "/dist/"
+    },
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                use: [
+                    'babel-loader'
+                ]
+            }
+        ]
+    }
+}
+```
+
+Esto configurará Webpack para agrupar el código React que se utilizará en modo de producción, donde el complemento de recarga en caliente o la configuración de depuración ya no serán necesarios.
 
 #### Nodemon
 
-### Vistas frontend con React
+Cree un archivo `nodemon.js` en su carpeta de proyecto y agregue la siguiente configuración.
+
+`mern-simplesetup/nodemon.js`:
+
+```sh
+{
+    "verbose": false,
+    "watch": [ "./server" ],
+    "exec": "webpack --mode=development --config 
+    webpack.config.server.js 
+                && node ./dist/server.generated.js"
+}
+```
+
+Esta configuración, configurará `nodemon` para observar los cambios en los archivos del servidor durante el desarrollo, luego ejecutará los comandos de compilación y compilación según sea necesario.
+
+### Vistas Frontend con React
+
+Para comenzar a desarrollar un frontend, primero cree un archivo de plantilla raíz llamado `template.js` en la carpeta del proyecto, que representará el HTML con los componentes React.
+
+`mern-simplesetup/template.js:`
+
+```sh
+export default () => {
+    return `<!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <title>MERN Kickstart</title>
+        </head>
+        <body>
+          <div id="root"></div>
+          <script type="text/javascript" src="/dist/bundle.js"> 
+       </script>
+        </body>
+      </html>` 
+} 
+```
+
+Cuando el servidor recibe una solicitud a la URL raíz, esta plantilla HTML se representará en el navegador y el elemento `div` con ID `"root"` contendrá nuestro componente `React`.
+
+A continuación, cree una carpeta `client` donde agregaremos dos archivos React, `main.js` y `HelloWorld.js`.
+
+El archivo `main.js` simplemente representa el componente `React` de entrada de nivel superior en el elemento `div` en el documento HTML.
+
+`mern-simplesetup/client/main.js`:
+
+```sh
+import React from 'react'
+import { render } from 'react-dom'
+import HelloWorld from './HelloWorld'
+
+render(<HelloWorld/>, document.getElementById('root'))
+```
+
+En este caso, el componente `React` de entrada es el componente `HelloWorld` importado desde `HelloWorld.js`.
+
+`HelloWorld.js` contiene un componente básico `HelloWorld`, que se exporta en caliente para permitir la recarga en caliente con `react-hot-loader` durante el desarrollo.
+
+`mern-simplesetup/client/HelloWorld.js`:
+
+```sh
+import React, { Component } from 'react'
+import { hot } from 'react-hot-loader'
+
+class HelloWorld extends Component {
+   render() {
+     return (
+         <div>
+             <h1>Hello World!</h1>
+         </div>
+     ) 
+   }
+}
+
+export default hot(module)(HelloWorld)
+```
+
+Para ver el componente `React` procesado en el navegador cuando el servidor recibe una solicitud a la URL raíz, necesitamos usar la configuración de Webpack y Babel para compilar y agrupar este código, y agregar el código del lado del servidor que responde a la solicitud de ruta raíz con el código incluido.
 
 ### Servidor con Express y Node
 
-#### Aplicación Express
+En la carpeta del proyecto, cree una carpeta llamada `server` y agregue un archivo llamado `server.js` que configurará el servidor. Luego, agregue otro archivo llamado `devBundle.js`, que ayudará a compilar el código React usando las configuraciones de Webpack mientras está en modo de desarrollo.
 
-#### Aplicación Bundle React durante el desarrollo
+#### Express App
+
+En `server.js`, primero agregaremos código para importar el módulo `express` para inicializar una aplicación Express.
+
+`mern-simplesetup/server/server.js`:
+
+```sh
+import express from 'express'
+
+const app = express()
+```
+
+Luego usaremos esta aplicación Express para construir el resto de la aplicación del servidor Node.
+
+#### Bundle React App Durante el Desarrollo
+
+Para mantener el flujo de desarrollo simple, inicializaremos Webpack para compilar el código del lado del cliente cuando se ejecute el servidor. En `devBundle.js`, configuraremos un método de compilación que tome la aplicación Express y la configure para usar el middleware Webpack para compilar, agrupar y servir código, así como habilitar la recarga en caliente en modo de desarrollo.
+
+`mern-simplesetup/server/devBundle.js`:
+
+```sh
+import webpack from 'webpack'
+import webpackMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
+import webpackConfig from './../webpack.config.client.js'
+
+const compile = (app) => {
+  if(process.env.NODE_ENV == "development"){
+    const compiler = webpack(webpackConfig)
+    const middleware = webpackMiddleware(compiler, {
+      publicPath: webpackConfig.output.publicPath
+    })
+    app.use(middleware)
+    app.use(webpackHotMiddleware(compiler))
+  }
+}
+
+export default {
+  compile
+}
+```
+
+Llamaremos a este método de compilación en `server.js` agregando las siguientes líneas mientras está en modo de desarrollo.
+
+`mern-simplesetup/server/server.js:`
+
+```sh
+import devBundle from './devBundle'
+const app = express()
+devBundle.compile(app)
+```
+
+Estas dos líneas resaltadas solo están destinadas al modo de desarrollo y deben comentarse al crear el código de la aplicación para la producción. En el modo de desarrollo, cuando se ejecutan estas líneas, Webpack compilará y agrupará el código React para colocarlo en
+
+`dist/bundle.js.`
 
 #### Sirviendo archivos estáticos desde la carpeta dist
 
