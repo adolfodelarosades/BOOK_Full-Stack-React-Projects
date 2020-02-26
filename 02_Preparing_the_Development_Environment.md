@@ -555,6 +555,43 @@ Con esto se crea el archivo `package.json`:
    ```sh
    192:mern-simplesetup-master adolfodelarosa$ npm i webpack-node-externals --save-dev
    ```
+El `package.json` final queda así:
+
+```sh
+{
+    "name": "mern-simplesetup-master",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongodb": "^3.5.4",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-hot-loader": "^4.12.19"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "nodemon": "^2.0.2",
+        "webpack": "^4.41.6",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-middleware": "^3.7.2",
+        "webpack-hot-middleware": "^2.25.0",
+        "webpack-node-externals": "^1.7.2"
+    }
+}
+```
+
+
 
 
 ### Configuración de Babel, Webpack y Nodemon
