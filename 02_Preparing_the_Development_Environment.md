@@ -616,9 +616,21 @@ Cree un archivo `.babelrc` en la carpeta de su proyecto y agregue el siguiente J
 
 El plugin `react-hot-loader/babel` es requerido por el módulo `react-hot-loader` para compilar los componentes `React`.
 
-
-
 #### Webpack
+
+Tendremos que configurar Webpack para agrupar el código del cliente y del servidor y el código del cliente por separado para el código de producción. Cree archivos `webpack.config.client.js, webpack.config.server.js` y `webpack.config.client.production.js` en la carpeta de su proyecto. Los tres archivos tendrán la siguiente estructura de código:
+
+```sh
+const path = require('path')
+const webpack = require('webpack')
+const CURRENT_WORKING_DIR = process.cwd()
+
+const config = { ... }
+
+module.exports = config
+```
+
+El objeto JSON `config` diferirá con los valores específicos del código del lado del cliente o del servidor, y el código de desarrollo versus el de producción.
 
 ##### Configuración del paquete web del lado del cliente para el desarrollo
 
