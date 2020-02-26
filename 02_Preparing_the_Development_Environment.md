@@ -368,26 +368,12 @@ Con esto se crea el archivo `package.json`:
   "license": "ISC"
 }
 ```
-Instalar Express:
+##### Instalar Dependencias.
+
+* Instalar **Express**:
 
 ```sh
 192:mern-simplesetup-master adolfodelarosa$ npm i express --save
-npm notice created a lockfile as package-lock.json. You should commit this file.
-npm WARN mern-simplesetup-master@1.0.0 No description
-npm WARN mern-simplesetup-master@1.0.0 No repository field.
-
-+ express@4.17.1
-added 50 packages from 37 contributors and audited 126 packages in 3.82s
-found 0 vulnerabilities
-
-
-┌───────────────────────────────────────────────────────────────────┐
-│                      npm update check failed                      │
-│                Try running with sudo or get access                │
-│               to the local update config store via                │
-│ sudo chown -R $USER:$(id -gn $USER) /Users/adolfodelarosa/.config │
-└───────────────────────────────────────────────────────────────────┘
-192:mern-simplesetup-master adolfodelarosa$ 
 ```
 
 Esto modifica el archivo `package.json`
@@ -409,23 +395,23 @@ Esto modifica el archivo `package.json`
 }
 ```
 
-Instalar MongoDB
+* Instalar **MongoDB**
 ```sh
 192:mern-simplesetup-master adolfodelarosa$ npm i mongodb --save
 ```
 
-Instalar Reac
+* Instalar **Reac**
 
 ```sh
 192:mern-simplesetup-master adolfodelarosa$ npm i react --save
 ```
-Instalar Reac Dom
+* Instalar **Reac Dom**
 
 ```sh
 npm i react-dom --save
 ```
 
-Instalar React Hot Loader
+* Instalar **React Hot Loader**
 
 ```sh
 192:mern-simplesetup-master adolfodelarosa$ npm i react-hot-loader --save
@@ -455,7 +441,88 @@ Todos estas instalaciones han modificado `package.json`
 
 ```
 
+##### Instalar las Dependencia de Desarrollo `devDependencies`:
+
+* Instalar **babel-core**:
+
 ```sh
+192:mern-simplesetup-master adolfodelarosa$ npm i babel-core --save-dev
+```
+
+* Instalar **babel-loader**:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+
+* Instalar ** **:
+
+```sh
+
+```
+
+
+* Instalar ** **:
+
+```sh
+
+```
+
+
+* Instalar ** **:
+
+```sh
+
+```
+
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
+```
+
+* Instalar ** **:
+
+```sh
+
 ```
 
 
