@@ -89,7 +89,7 @@ Contenido suplementario: [https://github.com/PacktPublishing/Full-Stack-React-Pr
 
    * Reviews
 
-#### Unleashing React Applications with MERN
+#### 1. Unleashing React Applications with MERN
 
 * MERN stack
 
@@ -139,7 +139,7 @@ Contenido suplementario: [https://github.com/PacktPublishing/Full-Stack-React-Pr
 
 * Summary
 
-#### Preparing the Development Environment
+#### 2. Preparing the Development Environment
 
 * Selecting development tools
 
@@ -217,7 +217,7 @@ Contenido suplementario: [https://github.com/PacktPublishing/Full-Stack-React-Pr
 
 * Summary
 
-#### Building a Backend with MongoDB, Express, and Node
+#### 3. Building a Backend with MongoDB, Express, and Node
 
 * Skeleton application overview
 
@@ -339,7 +339,7 @@ Contenido suplementario: [https://github.com/PacktPublishing/Full-Stack-React-Pr
 
 * Summary
 
-#### Adding a React Frontend to Complete MERN
+#### 4. Adding a React Frontend to Complete MERN
 
 Skeleton frontend
 
