@@ -591,12 +591,32 @@ El `package.json` final queda así:
 }
 ```
 
-
-
-
 ### Configuración de Babel, Webpack y Nodemon
 
+Antes de comenzar a codificar la aplicación web, necesitamos configurar Babel, Webpack y Nodemon para compilar, agrupar y recargar automáticamente los cambios en el código durante el desarrollo.
+
 #### Babel
+
+Cree un archivo `.babelrc` en la carpeta de su proyecto y agregue el siguiente JSON con `presets` y `plugins` especificados.
+
+`mern-simplesetup/.babelrc:`
+
+```sh
+{
+    "presets": [
+      "env",
+      "stage-2"
+      "react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
+}
+```
+
+El plugin `react-hot-loader/babel` es requerido por el módulo `react-hot-loader` para compilar los componentes `React`.
+
+
 
 #### Webpack
 
