@@ -896,9 +896,44 @@ Estas dos líneas resaltadas solo están destinadas al modo de desarrollo y debe
 
 `dist/bundle.js.`
 
-#### Sirviendo archivos estáticos desde la carpeta dist
+#### Sirviendo Archivos Estáticos Desde la Carpeta Dist
 
-#### Representación de plantillas en la raíz
+Webpack compilará el código del lado del cliente tanto en el modo de desarrollo como en el de producción, luego colocará los archivos agrupados en la carpeta `dist`. Para hacer que estos archivos estáticos estén disponibles en solicitudes del lado del cliente, agregaremos el siguiente código en `server.js` para servir archivos estáticos desde `dist/folder`.
+
+`mern-simplesetup/server/server.js`
+
+```sh
+import path from 'path'
+const CURRENT_WORKING_DIR = process.cwd()
+app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
+```
+
+#### Renderizar los Templates en la Raíz (root)
+
+Cuando el servidor recibe una solicitud en la URL raíz `/`, renderiza `template.js` en el navegador. En `server.js`, agregue el siguiente código de manejo de ruta a la aplicación Express para recibir solicitudes GET en `/`.
+
+`mern-simplesetup/server/server.js`:
+
+```sh
+import template from './../template'
+app.get('/', (req, res) => {
+     res.status(200).send(template())
+})
+```
+
+Finalmente, agregue el código del servidor para escuchar en el puerto especificado las solicitudes entrantes.
+
+`mern-simplesetup/server/server.js`:
+
+```sh
+let port = process.env.PORT || 3000
+app.listen(port, function onStart(err) {
+  if (err) {
+    console.log(err) 
+  }
+  console.info('Server started on port %s.', port)
+})
+```
 
 ### Conexión del servidor a MongoDB
 
