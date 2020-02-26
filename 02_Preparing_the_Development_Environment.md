@@ -954,6 +954,29 @@ En este ejemplo de código, `MongoClient` es el driver que se conecta a la insta
 
 ### npm ejecutar scripts
 
+Actualice el archivo `package.json` para agregar los siguientes scripts de ejecución npm para desarrollo y producción.
+
+`mern-simplesetup/package.json`:
+
+```sh
+"scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js
+``` 
+
+```sh
+                 && webpack --mode=production --config 
+     webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+}
+```
+
+* `npm run development`: Este comando hará que Nodemon, Webpack y el servidor se inicien para el desarrollo
+
+* `npm run build`: Esto generará los paquetes de código de cliente y servidor para el modo de producción (antes de ejecutar este script, asegúrese de eliminar el `devBundle.compile` código de `server.js`)
+
+* `npm run start`: Este comando ejecutará el código incluido en producción
+
 ### Desarrollo y depuración en tiempo real.
 
 ## Resumen
